@@ -8,9 +8,9 @@ from twitch_bot import *
 
 
 def build_say_hi_callback(bot, message):
-	# TODO: Créer et retourner une fonction qui prend un paramètre (ignoré).
-	#       Cette fonction envoie `message` dans le chat à l'aide de la méthode `send_privmsg` du paramètre `bot`.
-	pass
+	def callback(oauth:h6uxc1fszs0xyglz5lov1jgzb1zgln):
+		bot.send_privmsg(message)
+        return callback
 
 def run_ch7_example():
 	bot = TwitchBot("logs")
